@@ -4,11 +4,7 @@ function organizeInventory(inventory) {
   let repeatName = '';
   inventory.forEach((invent) => (response[invent.category] = {}));
   for (let i = 0; i < inventory.length; i++) {
-    let {
-      name,
-      category,
-      quantity
-    } = inventory[i];
+    let { name, category, quantity } = inventory[i];
     for (let j = i + 1; j < inventory.length; j++) {
       if (name === inventory[j].name && category === inventory[j].category) {
         sumQuantity = quantity + inventory[j].quantity;
@@ -24,7 +20,8 @@ function organizeInventory(inventory) {
   }
   return response;
 }
-const inventory = [{
+const inventory = [
+  {
     name: 'doll',
     quantity: 5,
     category: 'toys',
@@ -64,20 +61,21 @@ organizeInventory(inventory);
 //     racket: 4
 //   }
 
-const inventory2 = [{
+const inventory2 = [
+  {
     name: 'book',
     quantity: 10,
-    category: 'education'
+    category: 'education',
   },
   {
     name: 'book',
     quantity: 5,
-    category: 'education'
+    category: 'education',
   },
   {
     name: 'paint',
     quantity: 3,
-    category: 'art'
+    category: 'art',
   },
 ];
 

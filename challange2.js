@@ -45,5 +45,4 @@ createFrame(['a', 'bb', 'ccc'])
 // * bb  *
 // * ccc *
 // *******
-q
 createFrame(['a', 'bb', 'ccc', 'dddd'])
